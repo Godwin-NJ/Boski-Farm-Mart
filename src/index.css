@@ -1,13 +1,133 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+  border: 0px;
+}
+.navbar {
+  padding-left: 100px;
+  padding-right: 150px;
+  font-size: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.landpage {
+  width: 100%;
+  height: 500px;
+  padding-top: 6px;
+  opacity: 0.8;
+  z-index: -4;
+}
+.centered {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: whitesmoke;
+  font-weight: 1000;
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+/* .image-rsize {
+  max-width: 100%;
+  height: auto;
+} */
+.btn-adjust {
+  text-align: center;
+}
+
+.displayRow {
+  max-width: 25%;
+  margin: 20px;
+}
+
+.gridInv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-evenly;
+  max-height: 30%;
+  border: 2px solid white;
+  max-height: 100%;
+  width: 80rem;
+  margin: auto;
+}
+/* FORM  */
+.form {
+  max-width: 35rem;
+  margin: 10px auto;
+  border: 1px solid black;
+  max-height: 40rem;
+  height: 23rem;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  padding: 0 10px;
+}
+.formContinue {
+  padding: 10px 10px;
+}
+/* label focus color */
+.input-field label {
+  color: #000;
+}
+
+.form button {
+  margin-bottom: 45px;
+  margin-right: 20px;
+}
+.grillMsg {
+  display: block;
+  border: 1px solid black;
+  margin: 10px auto;
+  max-width: 30%;
+  text-align: center;
+}
+
+/* Tablets  */
+@media screen and (max-width: 992px) {
+  .gridInv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: -24px;
+    justify-content: center;
+    max-height: 30%;
+    border: 2px solid white;
+    max-height: 100%;
+    max-width: 40rem;
+    margin: auto;
+  }
+  .displayRow {
+    max-width: 40%;
+    margin: 20px;
+    height: 10%;
+  }
+}
+
+/* small screens */
+@media screen and (max-width: 600px) {
+  .gridInv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: -24px;
+    justify-content: center;
+    max-height: 30%;
+    border: 2px solid white;
+    max-height: 100%;
+    max-width: 35rem;
+    margin: auto;
+  }
+  .displayRow {
+    max-width: 70%;
+    margin: 30px;
+    height: 10%;
+  }
 }
