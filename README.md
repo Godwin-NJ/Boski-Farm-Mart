@@ -1,3 +1,5 @@
+This projects uses Materialize , React and HTML/CSS to create a visbility E commerce site .
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
